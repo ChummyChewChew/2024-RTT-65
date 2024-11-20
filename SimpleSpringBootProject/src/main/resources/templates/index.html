@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .button{
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+<h1>Learning Spring Boot</h1>
+<hr/>
+<h2>Hello World,</h2>
+<h2>This is my first Spring Boot web application</h2>
+<button id ="stop" onclick="stopPressing()">Hello</button>
+<script>
+    let answer =0;
+    function stopPressing(){
+
+        switch(answer) {
+            case 0:
+                document.getElementById("stop").innerHTML ="Please don't press me"
+                break;
+            case 1:
+                document.getElementById("stop").innerHtml ="I said don't press me"
+                break;
+            case 2:
+                document.getElementById("stop").innerHTML="STOP!"
+                break;
+            default:
+
+        }
+        answer++
+    }
+</script>
+</body>
+</html>

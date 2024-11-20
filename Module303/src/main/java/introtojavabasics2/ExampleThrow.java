@@ -11,29 +11,23 @@ conditions and rules; we use it WITHIN the method body or any block of code.
 We CANNOT THROW multiple exceptions with one THROW
  */
 
-interface  Sport{
-    void calculateAveAge(int [] age);
-    void retirePlayer(int id);
-}
-class Cricket implements Sport{
-    int[] playersId = new int[11];
-    Cricket(){
-        System.out.println("Cricket");
+public class ExampleThrow {
+    //declare exception using throws in the method signature
+    public void testMethod(int num) throws IOException, ArithmeticException{
+        if(num==1)
+            throw new IOException("IOException Occurred");
+        else
+            throw new ArithmeticException("ArithmeticException");
     }
-    public  void  calculateAveAge(int [] age){
-        int i =0;
-        int average = 0;
-        for (int a: age){
-            average += a;
+
+    public static void main(String[] args) {
+        //this try block calls the above method to handle the exception
+        try{
+            ExampleThrow obj=new ExampleThrow();
+            obj.testMethod(1);
+        }catch(Exception ex){
+            System.out.println(ex);
         }
-    }
-    public  void retirePlayer(int id){
-        int index = id;
-        for (int a: playersId){
-            if(a == id){
-                playersId[index] = a;
-                break;
-            }
-        }
+
     }
 }
