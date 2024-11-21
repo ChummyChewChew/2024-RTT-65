@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .header {
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .page-breaker {
+            background-color: red;
+            height: 100px;
+            width: 100%;
+        }
+        .table {
+            width: 100%;
+            display: table;
+            margin-top: 50px;
+            flex-grow: 1;
+        }
+        .row {
+            display: table-row;
+        }
+        .content { padding: 20px; flex: 1; display: flex; 
+            flex-direction: column; align-items: center; justify-content: center;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            margin-top: 50px;
+            width: 100%;
+        }
+        img {
+            height: 100px;
+            width: 150px;
+        }
+        .footer img {
+            width: 150px; 
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Hello and welcome!</div>
+    <div class="page-breaker"><br><br>FIRE SALE<br></div>
+    <div class="welcome-message">
+        You are welcome to pursue our selection of propane and propane accessories!
+    </div>
+    <div class="table">
+        <div class="row">
+            <div class="content">
+                <img src="\Images/propane.jpg.png" alt="Grill">
+                <p>Taste the meat, not the heat!</p>
+            </div>
+            <div class="content">
+                <img src="\Images/local.jpg" alt="local">
+                <p>Find your local location!</p>
+            </div>
+            <div class="content">
+                <img src="\Images/Grill.png" alt="Hank">
+                <p>Meet our friendly staff!</p>
+            </div>
+        </div>
+    </div>
+    <div class="page-breaker"><br><br>FIRE SALE<br></div>
+    <div class="footer">
+        <img src="\Images/logo.jpg" alt="Logo">
+    </div>
+</body>
+</html>

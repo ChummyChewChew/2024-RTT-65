@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="590989b0-e1b4-4398-876d-e2bde0b4eaec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/leorodriguez/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/leorodriguez/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateJPABegennier/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateJPABegennier/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateJPABegennier/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateJPABegennier/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateJPABegennier/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateJPABegennier/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateJPABegennier/src/main/java/org/leorodriguez/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HibernateJPABegennier/src/test/java/org/leorodriguez/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/JavaGlabsAndPAs/ArrayPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/JavaGlabsAndPAs/CourseRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/JavaGlabsAndPAs/NIOExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/JavaGlabsAndPAs/NioExampleTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/JavaGlabsAndPAs/course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/Calc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/ChannelDemoTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/FileClassDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/FileExampleOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/FileInputStreamExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/FileReaderExampleOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/FuncInterfaceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/Generic_FunctionInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/InBuiltFunctionalInterfacesDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/LambdaDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/MainEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/MultipleDemoReturn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/MultipleParameterDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/MyComparingClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/MyFirstFunctionalInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/NormalClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/PracticeClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/PracticeClass2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/PracticeInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/ScannerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/WriteDataInFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/src/main/java/org/leorodriguez/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NamedQuiries/src/test/java/org/leorodriguez/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/ExampleThrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module303/src/main/java/introtojavabasics2/ExampleThrow.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ChummyChewChew"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ChummyChewChew/2024-RTT-65.git",
+    "accountId": "88f57c21-4134-4419-a517-a953348240f0"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2oAaC1biq65ysH0E9BFC2Mm3kNs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="590989b0-e1b4-4398-876d-e2bde0b4eaec" name="Changes" comment="" />
+      <created>1730314704064</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730314704064</updated>
+      <workItem from="1730314705083" duration="2061000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

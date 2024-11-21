@@ -1,0 +1,13 @@
+package org.leorodriguez.model;
+
+import lombok.*;
+
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+public class Person {
+    private String firstName;
+    private String lastName;
+    private int age;
+}

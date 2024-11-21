@@ -1,0 +1,40 @@
+package org.leorodriguez;
+
+import java.awt.*;
+
+public class Triangle extends shape {
+    public Triangle() {
+    }
+
+    public Triangle(String color, double area, double base, double width, double height) {
+        super(color, area, base, width, height);
+    }
+
+    public Triangle(String color) {
+        super(color);
+    }
+
+    @Override
+    public void setBase(double base) {
+        super.base = base;
+    }
+
+    @Override
+    public void setWidth(double width) {
+        super.width = width;
+    }
+
+    @Override
+    public double getArea() {
+        return 0.5 * base * height;
+    }
+
+    public void displayshapName() {
+        System.out.println("I am a TriAngle");
+    }
+
+    public String toString() {
+        return "Triangle[base=" + base + ",height=" + height + "," + super.toString() + "]";
+
+    }
+}

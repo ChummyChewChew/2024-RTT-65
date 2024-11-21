@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Element Style Selector</title>
+    <style>
+
+        body{
+           margin: 0;
+        }
+        
+        h1 {
+            color: red;
+            font-size: 20px;
+        }
+        
+        h2 { 
+            color: green; 
+        }
+        
+        p {
+            color: yellow;
+          /*  background-color: gray;*/
+        }
+
+        /*Descendant Example
+        Descendant Combinator
+
+        section p {
+        color: grey;}*/
+    
+        /*Child Combinator >
+        section > p {
+        color: grey;}*/
+
+        /*Adjacent Sibling Combinator +*/
+        h2 + p {
+        color: grey;
+}
+
+.red-text {
+   color: red;
+}
+
+#mySection {
+   font-weight: bold;
+}
+
+
+
+
+        
+        </style>
+        
+</head>
+<body>
+    <h1>External Styles</h1>
+   <p>Allow you to define styles for the whole website.</p>
+    <p>This has a style applied via a class.</p>
+    <section>
+		 <h1>CSS Styles</h1>
+		<h2>Different ways to apply CSS styles</h2>
+		<p> 1)	Inline style </p>
+		<p> 2)	Internal style sheet</p>
+		<p> 3)	External style sheet </p>
+   </section>
+ 
+ <section id="mySection" >
+    <h2 class="red-text">Bootstrap</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div>Separator div does not affect general siblings.</div>
+    <p class="red-text" style="color:darkmagenta">Doloribus explicabo incidunt magnam magni nobis.</p>
+ </section>
+ 
+ 
+    
+</body>
+</html>
