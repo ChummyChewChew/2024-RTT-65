@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Welcome, Enter The Employee Details</h3>
+
+<form th:action="@{/addEmployee}" method="post"><!-- Form submission URL and method specified for Thymeleaf -->
+    <table>
+        <tr>
+            <td><label path="name">Id</label></td>
+            <td><input type="text" name="id"  /></td>
+        </tr>
+        <tr>
+            <td><label path="id">Enter Name</label></td><!-- Label for the ID input field -->
+            <td>  <input type="text" name="name" /></td><!-- Input field for the employee ID -->
+        </tr>
+        <tr>
+            <td><label path="contactNumber">Contact Number</label></td><!-- Label for the Contact Number input field -->
+            <td><input type="text" name="contactNumber" /></td><!-- Input field for the contact number -->
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td><!--Submit button -->
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

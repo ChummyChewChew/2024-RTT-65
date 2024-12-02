@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/UniformStyle.css">
+
+    <style>
+
+        h1 {
+            font-family: 'newFont', sans-serif;
+            color: #8bb9fe;
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+
+        .container {
+            font-family: 'newFont', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .card {
+            background-color: #8bb9fe;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px #8bb9fe;/* it's glowing!*/
+        }
+        .btn{
+            color: grey;
+
+            background-color: white;
+        }
+        .success{
+            color: green;
+
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>
+        Hello and welcome!
+    </h1>
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title text-center">Login</h2>
+            <!-- Login form -->
+            <form th:action="@{/users/login}" method="post">
+                <!--Emails field-->
+                <div class="form-group">
+                    <label for="login-email">Email address:</label>
+                    <input type="email" name="email" class="form-control" id="login-email" placeholder="Email here"
+                           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+
+                </div>
+                <!-- Password field -->
+
+                <div class="from-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" name="password" class="form-control" id="login-password" placeholder="Password"
+                    required>
+
+                </div>
+                <button type="submit" id ="login-button" class="btn btn-primary"> Login </button>
+            </form>
+            <div id="loginErrorMessage" class="error"></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title text-center">Register</h2>
+            <!--Register form -->
+            <form th:action="@{users/register}" th:object="${user}" method="post">
+                <!--email form-->
+                <div class="form-group">
+                    <label for="register-email">Email address:</label>
+                    <input type="email" th:field="*{email}" class="form-control" id="register-email" placeholder="Email here"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                    <div th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="error"></div>
+                </div>
+                <!--username field -->
+                <div class="form-group">
+                    <label for="register-username">Username</label>
+                    <input type="text" th:field="*{username}" class="form-control" id="register-username" placeholder=
+                            "Username" required>
+                    <div th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="error"></div>
+                    <!--Password-->
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" th:field="*{password}" class="form-control" id="register-password"
+                        placeholder="password" required>
+                        <div th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="error"></div>
+                    </div>
+                    <button type="submit" id="register-button" class="btn btn-primary">Register</button>
+                    <div id="registerErrorMessage" class="error"></div>
+                    <div id="registerSuccessMessage" class="success"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="../js/LoginEngine.js"></script>
+</body>
+</html>

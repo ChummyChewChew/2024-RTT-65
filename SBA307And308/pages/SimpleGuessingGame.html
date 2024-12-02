@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/GuessingGameEngine.js"></script>
+    <style>
+        @font-face {
+            font-family: 'newFont';
+            src: url('../Images/QuartzoBold-W9lv.ttf') format('truetype'); /* You need the .. if the images are in the same directory */
+            font-weight: normal;
+            font-style: normal;
+        }
+        .fancyText {
+            font-family: 'newFont', sans-serif;
+            text-align: center;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+        body {
+            background-image: url('../Images/circle-blues.webp');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container{
+            padding: 20px;
+            background-color: #8bb9fe;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #8bb9fe;
+            text-align: center;
+        }
+        #victoryImage{
+            display: none;
+            width: 80%;
+            height: 60%;
+            margin: 20px auto 0 auto;
+            position: absolute;
+            justify-content: center;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="fancyText" style="color: #8bb9fe;">
+    Let's play a simple guessing game!
+</h1>
+<div class="container">
+    <h2 class="fancyText" style="color: rebeccapurple">
+        Please select your difficulty!
+        <br>
+        You have three guesses to guess a number from one to five or one to ten!
+    </h2>
+    <div>
+        <label for="difficulty"> Please select your difficulty.</label>
+        <select id="difficulty">
+            <option value="none"  selected>Choose here!</option>
+            <option value="easy">Easy (1-5)</option>
+            <option value ="hard">Hard (1-10)</option>
+        </select>
+    </div>
+    <div>
+        <label>Please enter your guess here</label>
+        <label for="guess"></label><input type="number" id="guess" placeholder="Guess" disabled>
+    </div>
+    <button id="submitGuess" class="btn" disabled>Submit your guess</button>
+    <div id ="resultMessage" class="result"></div>
+    <img src="../Images/victory.jpg" id="victoryImage" alt="vic">
+</div>
+</body>
+<audio id="VICTORY" src="../SoundEffects/success-fanfare-trumpets-6185.mp3"></audio>
+<audio id="LOSS" src="../SoundEffects/brass-fail-8-a-207130.mp3"></audio>
+<audio id="BEEP" src="../SoundEffects/sci-fi-door-14782.mp3"></audio>
+
+
+</html>

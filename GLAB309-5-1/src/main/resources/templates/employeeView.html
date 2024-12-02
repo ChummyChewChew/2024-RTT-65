@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Submitted Employee Information</h2>
+<table>
+  <tr>
+    <td>ID :</td>
+    <td th:text="${id}" ></td><!-- Displays the employee ID using Thymeleaf expression -->
+  </tr>
+
+  <tr>
+    <td>Name :</td>
+    <td th:text="${name}" ></td><!-- Displays the employee name using Thymeleaf expression -->
+  </tr>
+
+  <tr>
+    <td>Contact Number :</td>
+    <td  th:text="${contactNumber}"></td><!-- Displays the employee number using Thymeleaf expression -->
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+This is a spring game review project. With this, users should be able to search a game either through id or title
+to view it's average score which is one out of ten. They should also be able to narrow their search through genre
+and submit their own reviews.
+Definition:
+User table
+user_Id
+userName
+password
+One to many with review
+Review table
+review_Id
+user_Id
+game_Id
+score
+shortSummery
+Many to one with user
+Many to one with game
+Game Table
+game_Id
+name
+relaseDate
+Many to many with genre
+Genre table
+genre_Name
+game_Id
+genre_Id
+Many to many with game
+
+With this data set, user's should be able to complete all of these functions.

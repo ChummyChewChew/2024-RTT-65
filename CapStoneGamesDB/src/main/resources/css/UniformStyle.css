@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: 'newFont';
+    src: url('../Images/QuartzoBold-W9lv.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.fancyText {
+    font-family: 'newFont', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+body {
+    background-image: url('../Images/circle-blues.webp');
+    background-size: cover;
+    background-attachment: fixed;
+}

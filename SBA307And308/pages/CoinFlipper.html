@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/UniformStyle.css">
+    <script src="../js/FlipEngine.js"></script>
+    <style>
+    .container{
+        padding: 20px;
+        background-color: #8bb9fe;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #8bb9fe;
+        text-align: center;
+        position: relative;
+    }
+    .resultTable{
+        margin-top: 20px;
+    }
+    .coinToss{
+        display: none;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+<h2 class="fancyText" style="color: #8bb9fe">
+    Coin flipper!
+</h2>
+<h3 class="fancyText" style="color: #8bb9fe">
+    Enter the number of coin flips! Up to ten!
+</h3>
+<form id="coinForm">
+<div class="container">
+    <div>
+        <label for="flipCount" class="fancyText" style="color: rebeccapurple">Number of flips</label>
+        <input type="number" class="form-control" id ="flipCount" placeholder="Between one and 10" min="1" max="10">
+    </div>
+    <button type="submit" class="btn fancyText" style="color: rebeccapurple">Flip the coins!</button>
+
+</form>
+<div class="resultTable">
+    <table class="table table-striped" id="resultTable">
+        <thead>
+        <tr>
+            <th>Flip num</th>
+            <th>Result</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--Results -->
+        </tbody>
+    </table>
+</div>
+<div class="coinToss" id="COIN">
+<img src="../Images/giphy.webp" alt="coim">
+</div>
+</body>
+<audio  id="coinsound" src="../SoundEffects/coin-flip-88793.mp3"></audio>
+
+</html>
