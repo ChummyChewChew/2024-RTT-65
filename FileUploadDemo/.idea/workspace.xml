@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3cb8dd4-15b0-4a4e-bca0-efb03427a238" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/ModelAndViewcontroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/MyControllerTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/PathVariableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/RequestParamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/Session_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/java/org/leorodriguez/glab30951/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/Home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/UserForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/employeeForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/employeeView.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/inboxpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/showData.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/userdata.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/viewPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GLAB309-5-1/src/main/resources/templates/viewPage_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SBA307And308/css/UniformStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SBA307And308/js/FlipEngine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SBA307And308/js/GuessingGameEngine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SBA307And308/js/LoginEngine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SBA307And308/pages/CoinFlipper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SBA307And308/pages/LoginAndWelcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SBA307And308/pages/SimpleGuessingGame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SBA307And308/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPAExample/src/main/java/org/leorodriguez/springdatajpaexample/controller/TutorialController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPAExample/src/main/java/org/leorodriguez/springdatajpaexample/model/Tutorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPAExample/src/main/java/org/leorodriguez/springdatajpaexample/repository/TutorialRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDataJPAExample/src/main/java/org/leorodriguez/springdatajpaexample/service/TutorialServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringInjectionAutoWiringExample/src/main/java/org/leorodriguez/springinjectionautowiringexample/myServices/Coach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringInjectionAutoWiringExample/src/main/java/org/leorodriguez/springinjectionautowiringexample/myServices/DatabaseFortuneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringInjectionAutoWiringExample/src/main/java/org/leorodriguez/springinjectionautowiringexample/myServices/FortuneServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringInjectionAutoWiringExample/src/main/java/org/leorodriguez/springinjectionautowiringexample/myServices/HappyFortuneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringInjectionAutoWiringExample/src/main/java/org/leorodriguez/springinjectionautowiringexample/myServices/RandomFortuneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringInjectionAutoWiringExample/src/main/java/org/leorodriguez/springinjectionautowiringexample/myServices/RestFortuneServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringInjectionAutoWiringExample/src/main/java/org/leorodriguez/springinjectionautowiringexample/myServices/TennisCoach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/controller/FieldMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/controller/FieldMatchValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/controller/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/security/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/service/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/java/org/leorodriguez/springsecurityexample1/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/resources/templates/confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample1/src/main/resources/templates/sign-up.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/config/SpringSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/controller/StudentAuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/dto/StudentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/security/CustomStudentDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/java/org/leorodriguez/springsecurityexample2/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurityExample2/src/main/resources/templates/students.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front-End_Work/Images/self.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front-End_Work/pages/boot.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Front-End_Work/pages/boot.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ChummyChewChew"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ChummyChewChew/2024-RTT-65.git",
+    "accountId": "88f57c21-4134-4419-a517-a953348240f0"
+  }
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2pOVXGtvGlpOaG0U3joQoI0W7HC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.FileUploadDemoApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="FileUploadDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="FileUploadDemo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.leorodriguez.fileuploaddemo.FileUploadDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3cb8dd4-15b0-4a4e-bca0-efb03427a238" name="Changes" comment="" />
+      <created>1732637151624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732637151624</updated>
+      <workItem from="1732637152648" duration="1934000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
