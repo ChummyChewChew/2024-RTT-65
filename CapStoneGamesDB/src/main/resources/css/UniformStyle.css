@@ -2,6 +2,7 @@
 @font-face {
     font-family: 'newFont';
     src: url('../Images/QuartzoBold-W9lv.ttf') format('truetype');
+
     font-weight: normal;
     font-style: normal;
 }
@@ -16,3 +17,25 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+ .container {
+     font-family: 'newFont', sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+ }
+
+.card {
+    background-color: #8bb9fe;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #8bb9fe; /* it's glowing! */
+}
+.btn{
+    background-color: #8bb9fe;
+    color: black;
+}
+

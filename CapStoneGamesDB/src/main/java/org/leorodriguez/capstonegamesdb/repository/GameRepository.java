@@ -13,6 +13,7 @@ import java.util.Set;
 
 @Repository
 public interface GameRepository  extends JpaRepository<Game, Long> {
+    List<Game> findAllGames();
 
     Game findByTitle(String title);
 

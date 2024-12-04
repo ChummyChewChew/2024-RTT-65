@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/UniformStyle.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="button-group">
+        <button type="button" class="btn" onclick="window.location.href='/home'">Home</button>
+    </div>
+    <div class="card">
+        <div class="card-body">
+                <h2 class="card-title text-center">Update Review</h2>
+            <form th:action="@{/update-delete-review}" method="post">
+                <div class="group">
+                    <label for="reviewId">Review ID: </label>
+                    <input type="number" name="reviewId" class="form-control" id="reviewId" required>
+                </div>
+                <div class="group">
+                    <label for="score">Score: </label>
+                    <input type="number" name="score" class="form-control" id="score" min="1" max="10" required>
+                </div>
+                <div class="group">
+                    <label for="summary">Summary: </label>
+                    <textarea name="Summary" class="form-control" id="summary" required maxlength="255"></textarea>
+                </div>
+                <button type="submit" class="btn">Update</button>
+                <div th:if="${updateErrorMessage}" class="error" th:text="${updateErrorMassage}"></div>
+            </form>
+            </div>
+        </div>
+
+<div class="card">
+    <div class="card-body">
+         <h3 class="card-title text-center">Delete Review</h3>
+    <form th:action="@{delete-review}" method="post">
+        <div class="group">
+            <label for="reviewId">Review ID: </label>
+            <input type="number" name="reviewId" class="form-control" id="reviewId2" required>
+        </div>
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <div th:if="${deleteErrorMessage}" class="error" th:text="${deleteErrorMessage}"
+    </form>
+</div>
+</div>
+</div>
+</body>
+</html>

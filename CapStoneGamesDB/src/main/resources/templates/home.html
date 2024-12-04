@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/UniformStyle.css">
+  <style>
+    .container {
+      font-family: 'newFont', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #8bb9fe;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px #8bb9fe; /* it's glowing! */
+    }
+
+    .table {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2 style="color: #8bb9fe">Welcome, <span th:text="${user.username}">User</span>!</h2>
+  <div class="button-group">
+    <!-- REMEMBER TO CHANGE TO ONLINE WHEN DONE TESTING-->
+    <button type="button" class="btn-primary" onclick="window.location.href='submit-review.html'">Submit a review</button>
+    <button type="button" class="btn-primary" onclick="window.location.href='query-game.html'">Query A Game</button>
+    <button type="button" class="btn-primary" onclick="window.location.href='query-genre-score.html'">Advanced Query</button>
+    <button type="button" class="btn-primary" onclick="window.location.href ='list-all-games.html'">All Games</button>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title text-center">Your Reviews</h2>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Review ID</th>
+          <th>Game</th>
+          <th>Score</th>
+          <th>Summary</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="review : ${reviews}">
+          <td th:each="${review.getId()}"></td>
+          <td th:text="${review.game.title}">Game Title</td>
+          <td th:text="${review.score}">Score</td>
+          <td th:text="${review.shortSummary}">Summary</td>
+          <td class="update-delete">
+            <button type="button" class="btn-primary" onclick="window.location.href ='update-or-delete'">Update/Delete</button>
+
+
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="../js/HomeEngine.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/UniformStyle.css">
+</head>
+<body>
+<div class="container">
+  <div class="btn-group">
+      <button type="button" class="btn" onclick="window.location.href='home.html'">Home</button>
+
+  </div>
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title text-center">Query A Game</h2>
+            <form th:action="@{/query-game}" method="get">
+                <div class="form-group">
+                    <label for="title">Game Title: </label>
+                    <input type="text" name="title" class="form-control" id="title" required>
+
+                </div>
+                <div class="error" th:if="${errorMessage}" th:text="${errorMessage}"></div>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="card" th:if="${game}">
+        <div class="card-title text-center">Result</div>
+        <div class="card-body">
+            <p>Title: <span th:text="${game.title}" style="font-family: sans-serif"></span></p>
+            <p>Description: <span th:text="${game.description}"></span> </p>
+            <p>Release Date: <span th:text="${game.releaseDate}"></span> </p>
+            <p>Genres: <span th:each="genre : ${game.genres}" th:text="${genre.genreName} + ', '"></span></p>
+            <p>Average Score <span th:text="${game.averageScore}"></span> </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

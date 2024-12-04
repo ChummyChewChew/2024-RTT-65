@@ -11,6 +11,8 @@ public class ReviewDTO {
 
     private long gameId;
 
+    private String gameTitle;
+
     @NotEmpty(message = "Score must not be empty!")
     private double score;
 

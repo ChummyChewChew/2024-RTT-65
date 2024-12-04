@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/UniformStyle.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="btn-group">
+    <button type="button" onclick="window.location.href='home.html'">Home</button>
+</div>
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title text-center">Query by Genre and Score</h2>
+        <form th:action="@{query-genre-score}" method="get">
+            <div class="group">
+                <label for="genres">Genres (separate with commas):</label>
+                <input type="text" name="genres" class="form-control" id="genres" placeholder="Action, Adventure">
+            </div>
+            <div class="group">
+                <label for="minScore">Minimum Score one to ten</label>
+                <input type="number" name="minScore" class="form-control" id="minScore" min="1" max="10" required>
+            </div>
+            <div class="error" th:if="${errorMessage}" th:text="${errorMessage}"></div>
+            <button type="submit" class="btn">Search</button>
+
+        </form>
+    </div>
+</div>
+    <div class="card" th:if="${games}">
+        <div class="card-body">
+            <div class="card-title text-center">Results</div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Release Date</th>
+                    <th>Genres</th>
+                    <th>Average Score</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="game : ${games}">
+                    <td th:text="${game.title}"></td>
+                    <td th:text="${game.description}"></td>
+                    <td th:text="${game.releaseDate}"></td>
+                    <td>
+                        <span th:each="genre : ${game.genres}" th:text="${genre.genreName} + ', '"></span>
+                    </td>
+                    <td th:text="${game.averageScore}"></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

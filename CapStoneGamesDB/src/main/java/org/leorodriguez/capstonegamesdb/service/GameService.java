@@ -17,4 +17,5 @@ public interface GameService {
     List<Game> findGameByGenres(Set<Genre> genres);
     List<Game> findAllGames();
     List<Game> findGamesByGenreAndMinimumScore(Set<Genre> genres, double minScore);
+    
 }

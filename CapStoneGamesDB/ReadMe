@@ -7,6 +7,7 @@ user_Id
 userName
 password
 One to many with review
+
 Review table
 review_Id
 user_Id
@@ -15,6 +16,7 @@ score
 shortSummery
 Many to one with user
 Many to one with game
+
 Game Table
 game_Id
 name
@@ -27,3 +29,7 @@ genre_Id
 Many to many with game
 
 With this data set, user's should be able to complete all of these functions.
+
+/** IMPORTANT
+use my sql to create a database called gamesdb
+**/
