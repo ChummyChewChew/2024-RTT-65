@@ -14,13 +14,14 @@ public class QueryGameController {
     private GameService gameService;
 
     @GetMapping("/query-game")
-    public String showQueryGameForm(){
+    public String showQueryGameForm() {
         return "query-game";
     }
-    @GetMapping("query-game")
-    public String queryGame(@RequestParam("title")String title, Model model){
+
+    @GetMapping("/query-game/search")
+    public String queryGame(@RequestParam("title") String title, Model model) {
         Game game = gameService.findByTitle(title);
-        if(game == null){
+        if (game == null) {
             model.addAttribute("errorMessage", "No such game");
             return "query-game";
         }

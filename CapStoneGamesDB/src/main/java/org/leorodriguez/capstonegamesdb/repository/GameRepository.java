@@ -9,15 +9,16 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 @Repository
 public interface GameRepository  extends JpaRepository<Game, Long> {
-    List<Game> findAllGames();
 
     Game findByTitle(String title);
 
     @Query("SELECT g FROM Game g JOIN g.genres gr WHERE gr IN :genres")
     List<Game> findGamesByGenres(@Param("genres") Set<Genre> genres);
 
+    Optional<Object> findById(int id);
 }

@@ -15,7 +15,7 @@ public class ReviewController {
 
 
     @PostMapping("/update-review")
-    public String updateReview(@RequestParam("reviewId")Long reviewId,
+    public String updateReview(@RequestParam("reviewId")int reviewId,
                                @RequestParam("score")int score,
                                @RequestParam("summary")String summary,
                                Model model) {
@@ -29,8 +29,8 @@ public class ReviewController {
         reviewService.save(review);
         return "redirect:/home";
     }
-    @PostMapping("/delete-revoew")
-    public String deleteReview(@RequestParam("reviewId")Long reviewId, Model model) {
+    @PostMapping("/delete-review")
+    public String deleteReview(@RequestParam("reviewId")int reviewId, Model model) {
         Review review = reviewService.findById(reviewId);
         if (review == null) {
             model.addAttribute("error", "Review not found");

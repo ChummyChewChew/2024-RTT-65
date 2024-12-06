@@ -51,7 +51,7 @@
         <div class="card-body">
             <h2 class="card-title text-center">Login</h2>
             <!-- Login form -->
-            <form th:action="@{/users/login}" method="post">
+            <form th:action="@{/login}" method="post">
                 <!--Emails field-->
                 <div class="form-group">
                     <label for="login-email">Email address:</label>
@@ -76,13 +76,13 @@
         <div class="card-body">
             <h2 class="card-title text-center">Register</h2>
             <!--Register form -->
-            <form th:action="@{users/register}" th:object="${user}" method="post">
+            <form th:action="@{/users/register/save}" th:object="${user}" method="post">
                 <!--email form-->
                 <div class="form-group">
                     <label for="register-email">Email address:</label>
                     <input type="email" th:field="*{email}" class="form-control" id="register-email" placeholder="Email here"
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
-                    <div th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="error"></div>
+                    <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error"></div>
                 </div>
                 <!--username field -->
                 <div class="form-group">
@@ -98,12 +98,12 @@
                         <div th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="error"></div>
                     </div>
                     <button type="submit" id="register-button" class="btn btn-primary">Register</button>
-                    <div id="registerErrorMessage" class="error"
+                    <div id="registerErrorMessage" class="error"></div>
                 </div>
             </form>
         </div>
     </div>
 </div>
-<script src="../js/LoginEngine.js"></script>
+
 </body>
 </html>

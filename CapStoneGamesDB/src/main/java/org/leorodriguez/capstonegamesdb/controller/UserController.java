@@ -5,6 +5,7 @@ import org.leorodriguez.capstonegamesdb.dto.UserDTO;
 import org.leorodriguez.capstonegamesdb.model.User;
 import org.leorodriguez.capstonegamesdb.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -16,14 +17,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/users")
 public class UserController {
-    public UserService userService;
+
+    private UserService userService;
 
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
     }
 
-    @GetMapping("login/register")
+    @GetMapping("/login/register")
     public String loginRegister(Model model) {
         model.addAttribute("user", new UserDTO());
         return "login-register";
@@ -39,9 +41,9 @@ public class UserController {
             return "login-register";
         }
         userService.saveUser(user);
-        model.addAttribute("success", true);
-        return "redirect:/login-register?success=true";
 
+        return "/home";
+//http://localhost:8080/users/login/register
     }
 
 
