@@ -31,5 +31,5 @@ Many to many with game
 With this data set, user's should be able to complete all of these functions.
 
 /** IMPORTANT
-use my sql to create a database called gamesdb
+use my sql to create a database called gamesdb and run SetUp once
 **/

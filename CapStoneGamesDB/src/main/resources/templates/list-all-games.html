@@ -20,7 +20,6 @@
         <th>Title</th>
         <th>Description</th>
         <th>Release Date</th>
-        <th>Genres</th>
         <th>Average Score</th>
       </tr>
       </thead>
@@ -29,9 +28,6 @@
         <td th:text="${game.title}"></td>
         <td th:text="${game.description}"></td>
         <td th:text="${game.releaseDate}"></td>
-        <td>
-          <span th:each="genre : ${game.genres}" th:text="${genre.genreName} + ', '"></span>
-        </td>
         <td th:text="${game.averageScore}"></td>
 
       </tr>

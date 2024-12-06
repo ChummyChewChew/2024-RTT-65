@@ -43,9 +43,7 @@ public class GameServiceImplementation implements GameService {
     }
 
     @Override
-    public List<Game> findAllGames() {
-        return gameRepository.findAll();
-    }
+    public List<Game> findAllGames() {return gameRepository.findAll();}
 
     @Override
     public List<Game> findGamesByGenreAndMinimumScore(Set<Genre> genres, double minScore) {

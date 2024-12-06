@@ -32,6 +32,6 @@ public class User {
     @Column(nullable = false, length =255)
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private Set<Review> reviews;
 }

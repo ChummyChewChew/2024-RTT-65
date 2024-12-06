@@ -29,9 +29,7 @@ public class HomeController {
 
     @GetMapping("/home")
     public String home(Principal principal, Model model) {
-        if (principal == null) {
-            return "redirect:/login-register";  // Redirect to login if the user is not authenticated
-        }
+        
 
         String email = principal.getName();
         User user = userService.findByEmail(email);

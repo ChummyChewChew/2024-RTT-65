@@ -22,7 +22,7 @@ public class Genre {
     @Column(nullable = false, unique = true, length = 255)
     private String genreName;
 
-    @ManyToMany(mappedBy = "genres")
+    @ManyToMany(mappedBy = "genres", fetch = FetchType.EAGER)
     private Set<Game> games;
 
 }

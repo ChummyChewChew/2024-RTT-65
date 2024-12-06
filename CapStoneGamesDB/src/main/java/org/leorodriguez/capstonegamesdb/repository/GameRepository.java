@@ -20,5 +20,5 @@ public interface GameRepository  extends JpaRepository<Game, Long> {
     @Query("SELECT g FROM Game g JOIN g.genres gr WHERE gr IN :genres")
     List<Game> findGamesByGenres(@Param("genres") Set<Genre> genres);
 
-    Optional<Object> findById(int id);
+    Optional<Game> findById(Long id);
 }

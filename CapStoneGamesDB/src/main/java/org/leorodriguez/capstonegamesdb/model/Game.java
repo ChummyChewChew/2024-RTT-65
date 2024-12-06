@@ -28,7 +28,7 @@ public class Game {
     @Column(nullable = false, length = 15)
     private int releaseDate;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "Game_Genre",
             joinColumns = @JoinColumn(name ="game_id"),
@@ -38,7 +38,7 @@ public class Game {
     //Chane
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     //change
     @JsonManagedReference
 

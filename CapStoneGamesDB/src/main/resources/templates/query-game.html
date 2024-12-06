@@ -32,7 +32,6 @@
             <p>Title: <span th:text="${game.title}" style="font-family: sans-serif"></span></p>
             <p>Description: <span th:text="${game.description}"></span> </p>
             <p>Release Date: <span th:text="${game.releaseDate}"></span> </p>
-            <p>Genres: <span th:each="genre : ${game.genres}" th:text="${genre.genreName} + ', '"></span></p>
             <p>Average Score <span th:text="${game.averageScore}"></span> </p>
         </div>
     </div>
