@@ -100,8 +100,7 @@ public class UserServiceImplementation implements UserService {
         return userRepository.existsByUsernameOrEmail(username, email);
     }
 
-
-    public User findByEmail(String email) {
+    public User findByEmail(String email){
         return userRepository.findByEmail(email);
     }
 

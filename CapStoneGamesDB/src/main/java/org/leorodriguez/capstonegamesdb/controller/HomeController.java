@@ -23,18 +23,22 @@ public class HomeController {
 
 
 
-    @Autowired
-    UserServiceImplementation userServiceImplementation;
+
 
 
 
     @GetMapping("/home")
     public String home(Principal principal, Model model) {
+        if (principal == null) {
+            return "redirect:/login-register";  // Redirect to login if the user is not authenticated
+        }
+
         String email = principal.getName();
-        User user = userServiceImplementation.findByEmail(email);
+        User user = userService.findByEmail(email);
 
         model.addAttribute("user", user);
-        model.addAttribute("reviews",reviewService.findReviewsByUser(user));
+        model.addAttribute("reviews", reviewService.findReviewsByUser(user));
         return "home";
     }
+
 }

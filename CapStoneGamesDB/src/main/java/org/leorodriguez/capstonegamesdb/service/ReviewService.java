@@ -28,6 +28,10 @@ public class ReviewService {
     public void delete(long id) {
         reviewRepository.deleteById(id);
     }
+    public void deleteReviewByUser(User user) {
+        List<Review> reviews = reviewRepository.findByUser(user);
+        reviewRepository.deleteAll(reviews);
+    }
 
 
 }

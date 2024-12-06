@@ -24,7 +24,7 @@ public class QueryGenreScoreController {
     public String showQueryGenreScoreForm(){
         return "query-genre-score";
     }
-    @GetMapping("/query-genre-score")
+    @GetMapping("/search-genre-score")
     public String  queryByGenreAndScore(@RequestParam("genres")String genres,
                                         @RequestParam("minScore") double minScore,
                                         Model model){

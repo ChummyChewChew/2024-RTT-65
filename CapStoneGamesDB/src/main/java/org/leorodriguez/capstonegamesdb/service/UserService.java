@@ -4,8 +4,6 @@ import org.leorodriguez.capstonegamesdb.dto.ReviewDTO;
 import org.leorodriguez.capstonegamesdb.dto.UserDTO;
 import org.leorodriguez.capstonegamesdb.model.User;
 
-import java.util.Optional;
-
 public interface UserService {
     User saveUser(UserDTO userDTO);
     void deleteUser(Long userId);
@@ -14,4 +12,6 @@ public interface UserService {
 
     void deleteReview(Long userId, Long reviewId);
     boolean usernameorEmailExists(String username, String email);
+
+    User findByEmail(String email);
 }

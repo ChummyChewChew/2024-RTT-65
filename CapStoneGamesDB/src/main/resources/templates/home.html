@@ -27,17 +27,23 @@
       width: 100%;
       margin-top: 20px;
     }
+    .delete-account{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   </style>
 </head>
 <body>
 <div class="container">
+  <button type="button" class="btn btn-danger delete-account" onclick="window.location.href='/delete-account'">Delete Account</button>
   <h2 style="color: #8bb9fe">Welcome, <span th:text="${user.username}">User</span>!</h2>
   <div class="button-group">
     <!-- REMEMBER TO CHANGE TO ONLINE WHEN DONE TESTING-->
-    <button type="button" class="btn-primary" onclick="window.location.href='submit-review.html'">Submit a review</button>
-    <button type="button" class="btn-primary" onclick="window.location.href='query-game.html'">Query A Game</button>
-    <button type="button" class="btn-primary" onclick="window.location.href='query-genre-score.html'">Advanced Query</button>
-    <button type="button" class="btn-primary" onclick="window.location.href ='list-all-games.html'">All Games</button>
+    <button type="button" class="btn-primary" onclick="window.location.href='/submit-review'">Submit a review</button>
+    <button type="button" class="btn-primary" onclick="window.location.href='/query-game'">Query A Game</button>
+    <button type="button" class="btn-primary" onclick="window.location.href='/query-genre-score'">Advanced Query</button>
+    <button type="button" class="btn-primary" onclick="window.location.href ='/list-all-games'">All Games</button>
   </div>
   <div class="card">
     <div class="card-body">
@@ -54,12 +60,12 @@
         </thead>
         <tbody>
         <tr th:each="review : ${reviews}">
-          <td th:each="${review.getId()}"></td>
+          <td th:each="${review.id}"></td>
           <td th:text="${review.game.title}">Game Title</td>
           <td th:text="${review.score}">Score</td>
           <td th:text="${review.shortSummary}">Summary</td>
           <td class="update-delete">
-            <button type="button" class="btn-primary" onclick="window.location.href ='update-or-delete'">Update/Delete</button>
+            <button type="button" class="btn-primary" onclick="window.location.href ='/update-delete-review'">Manage</button>
 
 
           </td>
@@ -69,6 +75,6 @@
     </div>
   </div>
 </div>
-<script src="../js/HomeEngine.js"></script>
+
 </body>
 </html>

@@ -18,7 +18,7 @@ public class GameController {
 
     //
     @GetMapping("/{id}")
-    public Game getGameById(@PathVariable long id) {
+    public Game getGameById(@PathVariable int id) {
         return gameService.findById(id);
     }
     @GetMapping("/by-genres")

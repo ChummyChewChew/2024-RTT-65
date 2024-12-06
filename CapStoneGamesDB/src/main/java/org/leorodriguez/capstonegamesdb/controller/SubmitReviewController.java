@@ -5,6 +5,7 @@ import org.leorodriguez.capstonegamesdb.impl.GameServiceImplementation;
 import org.leorodriguez.capstonegamesdb.impl.UserServiceImplementation;
 import org.leorodriguez.capstonegamesdb.model.Game;
 import org.leorodriguez.capstonegamesdb.model.User;
+import org.leorodriguez.capstonegamesdb.repository.ReviewRepository;
 import org.leorodriguez.capstonegamesdb.service.GameService;
 import org.leorodriguez.capstonegamesdb.service.ReviewService;
 import org.leorodriguez.capstonegamesdb.service.UserService;
@@ -18,8 +19,7 @@ import java.security.Principal;
 
 @Controller
 public class SubmitReviewController {
-    @Autowired
-    private ReviewService reviewService;
+
 
     @Autowired
     private UserService userService;
@@ -27,11 +27,8 @@ public class SubmitReviewController {
     @Autowired
     private GameService gameService;
 
-    @Autowired
-    private UserServiceImplementation userServiceImplementation;
 
-    @Autowired
-    private GameServiceImplementation gameServiceImplementation;
+
 
     @GetMapping("/submit-review")
     public String submitReviewForm(Model model) {
@@ -41,7 +38,7 @@ public class SubmitReviewController {
     @PostMapping("/submit-review")
     public String submitReview(Principal principal, ReviewDTO reviewDTO, Model model) {
         String email = principal.getName();
-        User user = userServiceImplementation.findByEmail(email);
+        User user = userService.findByEmail(email);
 
         Game game = gameService.findByTitle(reviewDTO.getGameTitle());
         if (game == null) {
